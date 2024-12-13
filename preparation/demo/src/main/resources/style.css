@@ -1,0 +1,22 @@
+/* Change the background color */
+.button {
+    -fx-background-color: #3498db; /* Blue */
+    -fx-text-fill: white; /* White text color */
+    -fx-font-size: 16px; /* Font size */
+    -fx-font-family: "Arial"; /* Font family */
+    -fx-padding: 10 20; /* Add padding inside the button */
+    -fx-border-color: #2980b9; /* Optional border color */
+    -fx-border-width: 2px; /* Border thickness */
+    -fx-border-radius: 5px; /* Rounded corners */
+    -fx-background-radius: 5px; /* Match background corner radius */
+}
+
+/* Hover effect */
+.button:hover {
+    -fx-background-color: #2980b9; /* Darker blue on hover */
+}
+
+/* Pressed effect */
+.button:pressed {
+    -fx-background-color: #1c6d9e; /* Even darker blue */
+}
