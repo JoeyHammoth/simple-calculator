@@ -1,0 +1,19 @@
+.button {
+    -fx-pref-width: 200px;
+    -fx-pref-height: 50px;
+    -fx-font-size: 30px;
+    -fx-border-width: 10px;
+}
+
+.label {
+    -fx-pref-width: 500px;
+    -fx-pref-height: 50px;
+    -fx-border-width: 10px;
+    -fx-border-color: lightBlue;
+    -fx-background-color: azure;
+    -fx-alignment: center;
+    -fx-border-radius: 10px;
+    -fx-background-radius: 10px;
+    -fx-font-weight: bold;
+    -fx-font-size: 30px;
+}

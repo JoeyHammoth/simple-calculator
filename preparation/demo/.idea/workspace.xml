@@ -5,9 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3313e681-9afa-4f86-ae7c-7169fa525c1b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../../Calculator/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Calculator/.idea/artifacts/Calculator_jar.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../Calculator/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Calculator/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Calculator/src/main/java/base/Calculation.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Calculator/src/main/java/base/Calculation.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../Calculator/src/main/java/base/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Calculator/src/main/java/base/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Calculator/src/main/resources/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/../../Calculator/src/main/resources/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -117,6 +119,7 @@
       <workItem from="1736109252562" duration="1572000" />
       <workItem from="1736191625021" duration="314000" />
       <workItem from="1736192088619" duration="29000" />
+      <workItem from="1736200466739" duration="243000" />
     </task>
     <servers />
   </component>

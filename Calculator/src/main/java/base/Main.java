@@ -10,7 +10,7 @@ public class Main extends Application {
         scene.getStylesheets().add(getClass().getResource("/style.css").toExternalForm());
         stage.setScene(scene);
         stage.setWidth(800);
-        stage.setHeight(600);
+        stage.setHeight(400);
         stage.show();
     }
 

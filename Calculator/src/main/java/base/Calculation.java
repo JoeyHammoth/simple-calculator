@@ -1,7 +1,6 @@
 package base;
 
-import javafx.beans.property.DoubleProperty;
-import javafx.beans.property.SimpleDoubleProperty;
+import javafx.application.Platform;
 import javafx.beans.property.SimpleStringProperty;
 import javafx.beans.property.StringProperty;
 import javafx.geometry.Insets;
@@ -68,15 +67,20 @@ public class Calculation {
         third.getChildren().addAll(b7, b8, b9, b0, bDecimal);
 
         Button bEquals = new Button("=");
-        bEquals.setId("Equal");
         bEquals.setOnAction(actionEvent -> {generateSol(displayContent);});
 
         Button bClear = new Button("Clear");
-        bClear.setId("Clear");
         bClear.setOnAction(actionEvent -> {displayContent.set("");});
 
+        Button bBack = new Button("Back");
+        bBack.setOnAction(actionEvent -> {displayContent.set(displayContent.get().
+                substring(0, displayContent.get().length() - 1));});
+
+        Button bExit = new Button("Exit");
+        bExit.setOnAction(actionEvent -> {Platform.exit();});
+
         HBox fourth = new HBox();
-        fourth.getChildren().addAll(bEquals, bClear);
+        fourth.getChildren().addAll(bEquals, bClear, bBack, bExit);
         VBox.setMargin(fourth, new Insets(10.0d));
 
         vbox.getChildren().addAll(zero, first, second, third, fourth);
