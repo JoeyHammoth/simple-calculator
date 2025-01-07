@@ -1,19 +1,12 @@
 # Simple Calculator with JavaFX
 
-This project is a simple calculator application built using JavaFX. It demonstrates how to build a graphical user interface (GUI) for a basic calculator with operations like addition, subtraction, multiplication, and division. Additionally, this calculator utilizes a custom package called `custom-java-math-library` for advanced mathematical operations that can be found [here](https://github.com/JoeyHammoth/custom-java-math-library).
+This project is a simple calculator application built using JavaFX. It demonstrates how to build a graphical user interface (GUI) for a basic calculator with the following operations: addition, subtraction, multiplication, and division. 
 
 ## Features
 
 - Basic arithmetic operations: addition, subtraction, multiplication, and division.
-- Supports advanced operations through the `custom-java-math-library` package.
 - Clean and responsive GUI using JavaFX.
 - Exception handling for invalid input.
-
-## Requirements
-
-- Java 11 or later
-- JavaFX SDK
-- `custom-java-math-library` package
 
 ## Installation
 
@@ -50,48 +43,62 @@ This project is a simple calculator application built using JavaFX. It demonstra
 3. You can now use the calculator to perform basic and advanced mathematical operations. The advanced operations are handled by methods from the `custom-java-math-library`.
 
 ## Project Structure
+### UML Diagram
+![UML DIAGRAM](diagram.png)
+### Project Tree
 
 ```
-simple-calculator-javafx/
-├── src/
-│   ├── com/
-│   │   ├── calculator/
-│   │   │   ├── CalculatorApp.java       # Main JavaFX Application
-│   │   │   ├── CalculatorController.java # Controller for Calculator UI
-│   │   └── custommath/
-│   │       ├── AdvancedMath.java        # Custom Math Library for advanced operations
-├── lib/
-│   ├── javafx-sdk/                      # JavaFX SDK
-├── README.md
-└── pom.xml                              # If using Maven
+.
+├── dependency-reduced-pom.xml
+├── out
+│   └── artifacts
+│       └── Calculator_jar
+│           └── Calculator.jar
+├── pom.xml
+├── src
+│   ├── main
+│   │   ├── java
+│   │   │   └── base
+│   │   │       ├── Calculation.java
+│   │   │       ├── Entry.java
+│   │   │       └── Main.java
+│   │   └── resources
+│   │       ├── META-INF
+│   │       │   └── MANIFEST.MF
+│   │       └── style.css
+│   └── test
+│       └── java
+└── target
+    ├── Calculator-1.0-SNAPSHOT.jar
+    ├── classes
+    │   ├── META-INF
+    │   │   └── MANIFEST.MF
+    │   ├── base
+    │   │   ├── Calculation.class
+    │   │   ├── Entry.class
+    │   │   └── Main.class
+    │   └── style.css
+    ├── generated-sources
+    │   └── annotations
+    ├── generated-test-sources
+    │   └── test-annotations
+    ├── maven-archiver
+    │   └── pom.properties
+    ├── maven-status
+    │   └── maven-compiler-plugin
+    │       ├── compile
+    │       │   └── default-compile
+    │       │       ├── createdFiles.lst
+    │       │       └── inputFiles.lst
+    │       └── testCompile
+    │           └── default-testCompile
+    │               ├── createdFiles.lst
+    │               └── inputFiles.lst
+    ├── original-Calculator-1.0-SNAPSHOT.jar
+    └── test-classes
 ```
-
 ## How It Works
-
-- The `CalculatorApp.java` class is the main entry point of the JavaFX application, which loads the user interface.
-- The `CalculatorController.java` handles the event-driven actions for calculator operations.
-- The `AdvancedMath.java` class from the `custom-java-math-library` provides methods for advanced mathematical operations, such as calculating square roots, trigonometric functions, and other complex math functionalities.
-
-## Example of Advanced Operations
-
-In addition to basic arithmetic, you can use advanced operations like square roots or power calculations using the custom math library.
-
-Example usage in `CalculatorController.java`:
-```java
-import com.custommath.AdvancedMath;
-
-public class CalculatorController {
-    public void handleSquareRoot() {
-        double result = AdvancedMath.sqrt(16);  // Returns 4.0
-        displayResult(result);
-    }
-
-    public void handlePower() {
-        double result = AdvancedMath.pow(2, 3); // Returns 8.0
-        displayResult(result);
-    }
-}
-```
+The three classes for this project are Main, Entry and Calculation. Calculation handles the entire UI and logic, Entry handles JavaFX scene setup and launch and Main acts as the main entrypoint used to package the project into a JAR executable using Maven.
 
 ## Contributing
 
