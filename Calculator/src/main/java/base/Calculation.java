@@ -11,6 +11,8 @@ import javafx.scene.control.Label;
 import javafx.scene.layout.HBox;
 import javafx.scene.layout.VBox;
 
+import java.math.BigDecimal;
+
 public class Calculation {
     public static Scene createCalcScene() {
         StringProperty displayContent = new SimpleStringProperty("");
