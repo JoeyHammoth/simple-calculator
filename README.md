@@ -10,37 +10,19 @@ This project is a simple calculator application built using JavaFX. It demonstra
 
 ## Installation
 
-1. Clone this repository to your local machine:
-   ```bash
-   git clone https://github.com/yourusername/simple-calculator-javafx.git
-   ```
+1. Go to the latest release [here](https://github.com/JoeyHammoth/simple-calculator/releases/tag/v1.0).
 
-2. Navigate into the project directory:
-   ```bash
-   cd simple-calculator-javafx
-   ```
+### Installation (JAR):
+2. Download the JAR file from the release section.
+3. Make sure you have Java installed on your system (Java 8 or above).
+4. Run JAR using the following command:
+```
+java -jar <JAR PATH>
+```
 
-3. If you don't already have the `custom-java-math-library`, download or clone it:
-   ```bash
-   git clone https://github.com/yourusername/custom-java-math-library.git
-   ```
-
-4. Add the `custom-java-math-library` to your project:
-   - In your IDE, add the `custom-java-math-library` as a dependency or include it in your project structure.
-
-## Usage
-
-1. Compile the project:
-   ```bash
-   javac -d bin src/com/calculator/*.java src/com/custommath/*.java
-   ```
-
-2. Run the application:
-   ```bash
-   java -cp "bin;path/to/javafx-sdk/lib/*" com.calculator.CalculatorApp
-   ```
-
-3. You can now use the calculator to perform basic and advanced mathematical operations. The advanced operations are handled by methods from the `custom-java-math-library`.
+### Installation (Mac):
+2. Download the calculator zip file in the release section.
+3. Unzip and run the executable.
 
 ## Project Structure
 ### UML Diagram
