@@ -13,8 +13,6 @@ import javafx.scene.layout.VBox;
 
 public class Calculation {
     public static Scene createCalcScene() {
-        double result = 0;
-
         StringProperty displayContent = new SimpleStringProperty("");
         Label display = new Label();
         display.textProperty().bind(displayContent);

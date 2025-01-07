@@ -6,7 +6,6 @@ import javafx.scene.control.Button;
 import javafx.scene.layout.*;
 import javafx.scene.paint.Color;
 import javafx.scene.shape.*;
-import javafx.scene.text.*;
 import javafx.stage.Stage;
 
 public class Main extends Application {
