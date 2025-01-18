@@ -1,5 +1,7 @@
 # Simple Calculator with JavaFX
 
+<img src="https://github.com/JoeyHammoth/simple-calculator/blob/main/vid.gif" alt="logo" width="250">
+
 This project is a simple calculator application built using JavaFX. It demonstrates how to build a graphical user interface (GUI) for a basic calculator with the following operations: addition, subtraction, multiplication, and division. 
 
 ## Features
