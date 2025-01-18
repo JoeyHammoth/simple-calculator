@@ -1,0 +1,1 @@
+typeSearchIndex = [{"l":"All Classes and Interfaces","u":"allclasses-index.html"},{"p":"base","l":"Calculation"},{"p":"base","l":"Entry"},{"p":"base","l":"Main"}];updateSearchResults();

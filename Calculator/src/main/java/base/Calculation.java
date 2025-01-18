@@ -13,7 +13,34 @@ import javafx.scene.layout.VBox;
 
 import java.math.BigDecimal;
 
+/**
+ * This class is used to create the calculator scene. It contains methods to generate the solution
+ * and create the calculator scene.
+ *
+ * @see javafx.beans.property.SimpleStringProperty
+ * @see javafx.beans.property.StringProperty
+ * @see javafx.geometry.Insets
+ * @see javafx.geometry.Pos
+ * @see javafx.scene.Scene
+ * @see javafx.scene.control.Button
+ * @see javafx.scene.control.Label
+ * @see javafx.scene.layout.HBox
+ * @see javafx.scene.layout.VBox
+ * @see javafx.application.Platform
+ * @see java.math.BigDecimal
+ *
+ * @version 1.0
+ * @since 1.0
+ */
 public class Calculation {
+
+    /**
+     * This method generates the solution for the given expression. It splits the expression into
+     * elements and performs the operation based on the operator. It then sets the result to the
+     * display.
+     *
+     * @return Scene The scene for the calculator.
+     */
     public static Scene createCalcScene() {
         StringProperty displayContent = new SimpleStringProperty("");
         Label display = new Label();
@@ -89,6 +116,18 @@ public class Calculation {
         return scene;
     }
 
+    /**
+     * This method generates the solution for the given expression. It splits the expression into
+     * elements and performs the operation based on the operator. It then sets the result to the
+     * display.
+     *
+     * @param displayContent The display content to generate the solution for.
+     *                       It contains the expression to evaluate.
+     *                       The result is set to the display.
+     *                       If an error occurs, an error message is set to the display.
+     *                       The display content is updated with the result or error message.
+     *
+     */
     public static void generateSol(StringProperty displayContent) {
         boolean error = false;
         String[] elements = displayContent.get().split(" ");
